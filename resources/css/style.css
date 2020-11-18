@@ -1,0 +1,518 @@
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+p {
+    opacity: 0.85;
+}
+h2 {
+    font-weight: 600;
+}
+
+body{
+    font-family: 'Poppins';
+}
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    left: 0px;
+    top: 0px;
+    height: 4rem;
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 100%;
+}
+
+#logo{
+    height: 3rem;
+}
+
+.logo {
+    flex: 1;
+    font-size: 1.75rem;
+    height: 2rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+span.academy {
+    opacity: 0.5;
+    font-weight: 400;
+}
+span.colmar {
+    opacity: 0.75;
+}
+
+nav.desktop {
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    color: black;
+}
+
+
+.content ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.content ul li {
+    padding-left: 1rem;
+}
+
+.mobile {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*MOBILE NAVBAR*/
+
+@media only screen and (max-width: 480px)
+ {
+    .content{
+        padding: 0;
+    }
+    header .desktop, header .logo, #logo{
+        display: none;
+    }
+
+    header .mobile{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header .mobile img {
+        height: 2rem;
+    }
+}
+
+/*MAIN CONTENT*/
+
+.maincontent {
+    position: relative;
+    top: 3.5rem;
+    background-color: rgb(253, 251, 249);
+}
+
+/*Start here*/
+
+.starthere {
+    display: flex;
+    background-color: rgb(226, 221, 221);
+    padding: 1.5rem;
+    align-items: center;
+}
+.startcontent {
+    max-width: 40%;
+    font-family: 'Poppins';
+    margin-left: 1.5rem;
+}
+
+.startcontent h1 {
+    line-height: 3.5rem;
+    font-size: 3rem;
+    color: rgb(59, 59, 59);
+}
+
+.startcontent h2 {
+    line-height: 2.3rem;
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+}
+
+.starthere img {
+    max-width: 60%;
+    padding: 2rem 0;
+}
+
+.startbutton {
+    background-color: black;
+    text-align: center;
+    border: 1px black solid;
+    padding: 0.5rem 0;
+    opacity: 0.5;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*Mobile start here screen*/
+
+@media only screen and (max-width:480px){
+    .startcontent, #startimg, .startbutton {
+        display: none;
+    }
+
+    .starthere {
+        padding: 0;
+        background-color: rgb(226, 221, 221)
+    }
+    .starthere .mobile {
+        display: flex;
+    }
+    .startmobile {
+        padding-bottom: 2rem;
+    }
+    
+    .startmobile img {
+        max-width: 100%;      
+        padding: 0;      
+    }
+    
+    .mobilebutton {
+        background-color: black;
+        text-align: center;
+        border: 1px black solid;
+        padding: 0.5rem 0;
+        opacity: 0.4;
+        color: white;
+        margin: 0 1rem;
+        font-weight: 500;
+        font-size: 1.35rem;
+    }
+
+    .startmobile h2 {    
+        margin: 0 1rem 1.5rem;
+        color: rgb(59, 59, 59);
+        font-weight: 500;
+    }
+    .startmobile h1 {
+        margin: 2rem 1rem;
+        color: rgb(59, 59, 59);
+    }
+    
+}
+
+/*Second Content*/
+
+.secondcontent {
+    display: flex;
+    font-family: 'Poppins';
+    color: rgb(59, 59, 59);
+}
+
+/*Large box*/
+
+.largerbox {
+    max-width: 60%;
+    padding: 2rem 1.5rem;
+    border-right: 1px rgb(226, 221, 221) solid;
+}
+.largecontent img {
+    max-width: 100%;
+}
+
+.largecontent h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 2rem 0 1.5rem;
+}   
+
+.largecontent p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#emanuel {
+    font-size: 1rem;
+    font-family: 'Roboto';
+    margin-top: 1.5rem;
+}
+
+/*Small boxes*/
+
+.smallerboxes {
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+    bottom: 1rem;
+    position: relative;
+    padding: 2rem 0rem;
+}
+.smallcontent {
+    display: flex;
+    padding: 1rem 1rem 0.5rem;
+    border-bottom: 1px rgb(226, 221, 221) solid;
+    border-top: 1px rgb(226, 221, 221) solid;
+    margin: 1px;
+}
+.smallcontent:hover{
+    background-color: rgb(226, 221, 221);
+    transition: background-color 0.5s;
+}
+.boximg {
+    max-width: 35%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.textbox {
+    max-width: 65%;
+}
+.textbox a {
+    color: blue;
+    opacity: 0.85;
+}
+
+.mobileboxes{
+    display: none;
+}
+/*Mobile*/
+
+@media only screen and (max-width:480px){
+
+    .largerbox, .smallerboxes {
+        display: none;}
+
+    .mobileboxes{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .mobilecontent {
+        padding: 0 1rem;
+    }
+    .mobilecontent .mobilemedia{
+        min-width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    #orientation{
+        padding-top: 2rem;
+        background-image: url(../images/information-orientation-mobile.jpg);
+        height: 10rem;
+        background-size: cover;
+    }
+    #ourcampus{
+        padding-top: 2rem;
+        background-image: url(../images/information-campus-mobile.jpg);
+        height: 10rem;
+        background-size: cover;
+        margin-top: 2rem;
+    }
+    #guestlecture{
+        padding-top: 2rem;
+        background-image: url(../images/information-guest-lecture-mobile.jpg);
+        height: 10rem;
+        background-size: cover;
+        margin-top: 2rem;
+    }
+    .mobiletext{
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .mobileboxes a {
+        color: blue;
+    }
+}
+
+/*START LEARNING*/
+
+.learningcontent {
+    color: rgb(59, 59, 59);
+    background-color: rgb(226, 221, 221);
+    padding: 2rem 4.5rem;
+}
+
+.learningcontent h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.smallboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.smallbox {
+    background-color: rgb(253, 251, 249);
+    margin: 1rem;
+    font-size: 1.5rem;
+    max-width: 26rem;
+    line-height: 2rem;
+}
+.smallbox:hover{
+    background-color: white;
+    transition: background-color 1s;
+}
+.smallbox img {
+    height: auto;
+    width: 100%;
+}
+
+#courses {
+    margin: 0.5rem 0;
+    opacity: 0.75;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.text {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.text p {
+    margin: 0;
+    opacity: 0.75;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.text h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.mobilelearning{
+    display: none;
+}
+
+/*Mobile*/
+@media only screen and (max-width:480px){
+    .learningcontent{
+        display: none;
+    }
+    .mobilelearning{
+        display: block;
+        padding: 2rem 0;
+        border-top: 1px solid rgb(226, 221, 221);
+        border-bottom: 1px solid rgb(226, 221, 221);
+    }
+    .mobilesmall{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobilesmallbox{
+        padding: 1rem 1rem 1.5rem;
+        background-color: rgb(226, 221, 221);
+        margin: 0.25rem;
+        font-size: 1.5rem;  
+        color: rgb(59, 59, 59);
+        }
+    #startlearning{
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0.75rem;
+        color: rgb(59, 59, 59);
+    }
+    #learningtext{
+        margin: 0;
+        font-weight: 500;
+    }
+}
+
+
+
+/*THESIS*/
+
+.thesis {
+    color: rgb(59, 59, 59);
+}
+
+.thesis h1 {
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.largecontent h2 {
+    margin: 1.5rem 0 0.5rem;
+    font-weight: 600;
+}
+.largecontent p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.thesiscontent {
+    display: flex;
+}
+
+video {
+    width: 100%;
+}
+
+.thesissmall {
+    display: flex;
+    align-items: center;
+}
+.thesissmall:hover {
+    background-color: rgb(226, 221, 221);
+    transition: background-color 0.5s;
+}
+
+.thesisbox {
+    max-width: 60%;
+    padding: 2rem 1.5rem;
+
+}
+.thesissmall img {
+    padding: 1rem;
+}
+
+.mobilethesis{
+    display: none;
+}
+
+/*Mobile*/
+@media only screen and (max-width:480px){
+
+.thesis{
+    display:none;
+}
+
+.mobilethesis{
+    display: block;
+    padding: 2rem 0 1.5rem;
+}
+
+#thesisheading{
+    margin: 0 0 1rem;
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+
+}
+/*Footer*/
+span.terms {
+    float: right;
+}
+footer {
+    padding: 1rem 1.5rem 3rem;
+    border-top: 1px rgb(226, 221, 221) solid;
+    opacity: 0.8;
+}
+
+/*Mobile*/
+@media only screen and (max-width:480px){
+
+    .terms{
+        display: none;
+    }
+    footer{
+        padding: 1rem;
+        border: none;
+        
+    }
+}
